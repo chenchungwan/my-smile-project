@@ -1,0 +1,38 @@
+{
+  "name": "SmileNotification",
+  "type": "object",
+  "properties": {
+    "image_url": {
+      "type": "string",
+      "description": "URL of the smile image from Pinterest"
+    },
+    "image_description": {
+      "type": "string",
+      "description": "Description of what's smiling in the image"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "Latitude where notification was sent"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Longitude where notification was sent"
+    },
+    "location_name": {
+      "type": "string",
+      "description": "Human-readable location name"
+    },
+    "sent_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the smile notification was sent"
+    }
+  },
+  "required": [
+    "image_url",
+    "image_description",
+    "latitude",
+    "longitude",
+    "sent_at"
+  ]
+}

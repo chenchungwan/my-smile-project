@@ -1,0 +1,31 @@
+{
+  "name": "SharedSmile",
+  "type": "object",
+  "properties": {
+    "image_url": {
+      "type": "string",
+      "description": "URL of the user-uploaded smile image"
+    },
+    "description": {
+      "type": "string",
+      "description": "User's message or description for the smile"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "Latitude where the smile was shared"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Longitude where the smile was shared"
+    },
+    "location_name": {
+      "type": "string",
+      "description": "Human-readable location name"
+    }
+  },
+  "required": [
+    "image_url",
+    "latitude",
+    "longitude"
+  ]
+}

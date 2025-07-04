@@ -1,0 +1,48 @@
+{
+  "name": "ContentReport",
+  "type": "object",
+  "properties": {
+    "reported_content_type": {
+      "type": "string",
+      "enum": [
+        "smile_notification",
+        "shared_smile"
+      ],
+      "description": "Type of content being reported"
+    },
+    "reported_content_id": {
+      "type": "string",
+      "description": "ID of the content being reported"
+    },
+    "report_reason": {
+      "type": "string",
+      "enum": [
+        "inappropriate",
+        "spam",
+        "offensive",
+        "not_smile",
+        "other"
+      ],
+      "description": "Reason for reporting the content"
+    },
+    "additional_details": {
+      "type": "string",
+      "description": "Additional details about the report"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "reviewed",
+        "resolved"
+      ],
+      "default": "pending",
+      "description": "Status of the report"
+    }
+  },
+  "required": [
+    "reported_content_type",
+    "reported_content_id",
+    "report_reason"
+  ]
+}
